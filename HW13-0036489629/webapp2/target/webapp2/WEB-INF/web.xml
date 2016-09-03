@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	metadata-complete="true" version="3.0">
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>setcolor</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.SetColorServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>setcolor</servlet-name>
+		<url-pattern>/setcolor</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>css</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.CSSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>css</servlet-name>
+		<url-pattern>/dynamicStyle.css</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>trigonometric</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.TrigonometricServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>trigonometric</servlet-name>
+		<url-pattern>/trigonometric</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>powers</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.PowersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>powers</servlet-name>
+		<url-pattern>/powers</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>reportImage</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.ReportImageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reportImage</servlet-name>
+		<url-pattern>/reportImage</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>glasanje</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.GlasanjeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>glasanje</servlet-name>
+		<url-pattern>/glasanje</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>glasanjeGlasaj</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.GlasanjeGlasajServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>glasanjeGlasaj</servlet-name>
+		<url-pattern>/glasanje-glasaj</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>glasanjeRezultati</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.GlasanjeRezultatiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>glasanjeRezultati</servlet-name>
+		<url-pattern>/glasanje-rezultati</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>glasanjeXLS</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.GlasanjeXLSServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>glasanjeXLS</servlet-name>
+		<url-pattern>/glasanje-xls</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>glasanjeChart</servlet-name>
+		<servlet-class>hr.fer.zemris.java.hw13.servlets.GlasanjeGrafikaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>glasanjeChart</servlet-name>
+		<url-pattern>/glasanje-grafika</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>hr.fer.zemris.java.hw13.listeners.StartContextListener</listener-class>
+	</listener>
+</web-app>

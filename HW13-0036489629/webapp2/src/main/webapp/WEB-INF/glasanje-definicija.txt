@@ -1,0 +1,6 @@
+1	Alter Bridge	https://www.youtube.com/watch?v=yz_j7nVCJJ0
+2	Dream Theater	https://www.youtube.com/watch?v=ZVMIk3xYaYo
+3	Iron Maiden	https://www.youtube.com/watch?v=0NYiOHGapRk
+4	Pink Floyd	https://www.youtube.com/watch?v=vi7cuAjArRs
+5	Porcupine Tree	https://www.youtube.com/watch?v=iBfY86cktN0
+6	Yes	https://www.youtube.com/watch?v=-Tdu4uKSZ3M

@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="HW18-0036489629:war exploded">
+    <output-path>$PROJECT_DIR$/target/galerija</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="HW18-0036489629" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.web:javax.servlet.jsp.jstl:1.2.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/galerija/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="HW18-0036489629/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,34 @@
+load r2, @zero
+load r3, @counter
+
+load r5, @inputmsg
+load r6, @errormsg
+load r7, @echomsg
+load r8, @newline
+
+@inputloop:		echo r5
+				iinput 50 ;save input to memory location 50
+				jumpIfTrue @exitInput
+				echo r6
+				echo r8
+				jump @inputloop
+
+@exitInput:		load r4, 50
+				echo r7
+				echo r8
+@giveNumbers:	testEquals r2, r3
+				jumpIfTrue @end
+				decrement r3
+				increment r4
+				echo r4
+				echo r8
+				jump @giveNumbers
+		
+@end:		halt
+
+@zero:		DEFINT 	0
+@counter:	DEFINT	5
+@inputmsg:	DEFSTR "Unesite početni broj: "
+@errormsg:	DEFSTR "Unos nije moguće protumačiti kao cijeli broj."
+@echomsg:	DEFSTR "Sljedećih 5 brojeva je:"
+@newline:	DEFSTR "\n"

@@ -1,0 +1,57 @@
+load r0, @zero
+load r1, @one
+
+iinput 120
+load r3, 120 ; R3 <- n
+
+push r3
+
+call @fib
+pop r4
+echo r4
+halt
+
+@fib:	push r6 ; context
+		push r7
+		push r8
+
+		move r6, [r15+5]
+
+		testEquals r6, r0 	; fib(0) = fib(1) = 1
+		jumpIfTrue @retOne
+		testEquals r6, r1
+		jumpIfTrue @retOne
+		
+		move r7, [r15+5] ; r7 <- n-1
+		decrement r7
+		push r7
+
+		call @fib
+		pop r7 ; r7 <- fib(n-1)
+
+		move r8, [r15+5] ; r8 <- n-2
+		decrement r8
+		decrement r8
+		push r8
+
+		call @fib ; recursion
+		pop r8
+
+		add r6, r7, r8
+
+		move [r15+5], r6
+
+@return:	pop r8 ; restore context
+			pop r7
+			pop r6
+
+			ret
+
+@retOne:	move [r15+5], r1 ; return 1
+			jump @return
+
+@zero:		DEFINT 	0
+@one:		DEFINT	1
+	
+	RESERVE:50
+@stackTop:	RESERVE

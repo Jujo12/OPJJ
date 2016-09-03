@@ -1,0 +1,130 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body, html{
+    margin: 0; padding: 0;
+    font-family: "Lucida Sans Unicode";
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 18px;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.5em;
+}
+    h1.entryTitle{
+        text-decoration: underline;
+        float: left;
+    }
+a{
+    color: #3F51B5;
+}
+.cleaner{
+    clear: both;
+}
+
+#header{
+    min-height:60px;
+    background: #303F9F;
+    color: #FFF;
+}
+    #header a{
+        color: rgba(255, 255, 255, 0.87);
+    }
+#header #logo{
+    float: left;
+    font-size: 2em;
+    padding:5px 0;
+    color: #FFF;
+}
+#header #userBar{
+    float: right;
+    margin-top: 20px;
+}
+
+.container{
+    width:800px;
+    margin: auto;
+}
+.content{
+    background: #ECEFF1;
+    border: 1px solid #B0BEC5;
+    box-shadow: 0 0 3px #607D8B;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.right{
+    float: right;
+}
+
+.accForm{
+    width: 450px;
+    margin: 1em auto;
+}
+.accForm .row{
+    clear: both;
+    padding: 5px 0;
+}
+.accForm .row label{
+    float: left;
+    display: block;
+    width: 150px;
+    padding-right: 1em;
+    text-align: right;
+}
+.accForm .row input, a.button {
+    float: right;
+    width: 300px;
+    display: block;
+    padding: 5px;
+    font-weight: 600;
+
+    color: rgba(0, 0, 0, 0.87);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #3F51B5;
+
+    outline: none;
+    text-decoration: none;
+}
+.accForm .row input[type=submit], a.button{
+    margin-top: 1em;
+    margin-left: 10px;
+    cursor: pointer;
+    min-width: 100px;
+    width:auto;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1em;
+
+    background: #9FA8DA;
+    border: none;
+
+    text-align: center;
+}
+
+#commentForm{
+    float: right;
+}
+#commentForm input, #commentForm textarea{
+    display: block;
+    width:350px;
+    background: transparent;
+    border: 1px solid #303F9F;
+    margin: 5px 0;
+    padding: 5px;
+    font-family:"Lucida Sans Unicode";
+}
+#commentForm textarea{
+    height:170px;
+}
+#commentForm input[type=submit]{
+    width:175px;
+    margin-left:175px;
+    font-weight: 600;
+    cursor: pointer;
+}

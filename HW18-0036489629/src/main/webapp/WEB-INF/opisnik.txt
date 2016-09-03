@@ -1,0 +1,30 @@
+aeolian.jpg
+Drveni jedrenjak
+jedrenjak, drvo, jedro
+bosensee.jpg
+Jedrilica s dignutim glavnim jedrom i gennakerom
+jedrilica, gennaker, jedro
+cruise.jpg
+Veliki drveni krstaš-jedrenjak
+krstaš, jedrenjak, jedro
+den42.jpg
+Jedrilica koja plovi uz vjetar; dignuto glavno i prednje jedro
+jedrilica, jib, genoa, close reach
+gennaker.jpg
+Jedrilica s dignutim gennakerom
+jedrilica, gennaker, downwind
+island_time.jpg
+Mala jedrilica
+jedrilica, mini
+jedrenjak.jpg
+Slika starinskog, velikog drvenog jedrenjaka
+slika, jedrenjak, jedro
+jedrenjak2.jpg
+3D prikaz modernog drvenog jedrenjaka
+3D, jedrenjak, drvo
+spinnaker.jpg
+Trkaća jedrilica s dignutim spinnakerom
+spinnaker, jedro, jedrilica, utrka, downwind
+sunset.jpg
+Sportska jedrilica na zalasku sunca
+sunset, jedrilica, more, summer
